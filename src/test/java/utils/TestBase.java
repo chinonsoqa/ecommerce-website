@@ -41,7 +41,7 @@ public class TestBase {
         if (driver == null)
         {
             if (prop.getProperty("browser").equalsIgnoreCase("edge")) {
-                System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+".\\src\\test\\resources\\msedgedriver_131.0.2903.51.exe");
+                System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+".\\src\\test\\resources\\msedgedriver_133.0.3065.92.exe");
                 driver = new EdgeDriver();
 
 

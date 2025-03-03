@@ -7,6 +7,7 @@ public class pageObjectManager {
 
     public TC_1_1_PageObject tc_1_1_pageObject;
     public TC_1_1B_PageObject tc_1_1b_pageObject;
+    public TC_1_2_PageObject tc_1_2_pageObject;
 
     //Constructor
     public pageObjectManager(WebDriver driver) {
@@ -23,6 +24,12 @@ public class pageObjectManager {
     {
         tc_1_1b_pageObject = new TC_1_1B_PageObject(driver);
         return tc_1_1b_pageObject;
+    }
+
+    public TC_1_2_PageObject getTC1_2PageObject()
+    {
+        tc_1_2_pageObject = new TC_1_2_PageObject(driver);
+        return tc_1_2_pageObject;
     }
 
 
